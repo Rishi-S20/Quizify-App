@@ -106,26 +106,6 @@ struct LoginView: View {
                     
                     
                     
-                    NavigationLink(destination: GreetingView()) {
-                        
-                        Text("Sign Up")
-                            .font(.custom("Kiwi Maru Regular", size: 18))
-                            .frame(width: 158, height: 35)
-                            .background(Color(hex: "#FFFFFF"))
-                            .cornerRadius(20)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color(hex: "#C97D60"))
-                                
-                            )
-                            .foregroundColor(Color(hex: "#C97D60"))
-                        
-                    }
-                    
-                    
-                    HStack{
-                        
-                    }
                     
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

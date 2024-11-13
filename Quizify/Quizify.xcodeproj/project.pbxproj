@@ -103,9 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				CBECC25D2CE42A54001F8ED0 /* Info.plist */,
-				CBECC25B2CE42A2F001F8ED0 /* KiwiMaru-Light.ttf */,
-				CBECC25C2CE42A30001F8ED0 /* KiwiMaru-Medium.ttf */,
-				CBECC25A2CE42A2E001F8ED0 /* KiwiMaru-Regular.ttf */,
 				CBECC2592CE42A11001F8ED0 /* Fonts */,
 				CBECC2532CE4275A001F8ED0 /* Views */,
 				CBECC22B2CE42702001F8ED0 /* ContentView.swift */,
@@ -153,6 +150,9 @@
 		CBECC2592CE42A11001F8ED0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				CBECC25B2CE42A2F001F8ED0 /* KiwiMaru-Light.ttf */,
+				CBECC25C2CE42A30001F8ED0 /* KiwiMaru-Medium.ttf */,
+				CBECC25A2CE42A2E001F8ED0 /* KiwiMaru-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
