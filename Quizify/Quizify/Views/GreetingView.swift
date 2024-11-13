@@ -59,10 +59,10 @@ struct GreetingView: View {
     
     
     let textArray = [
-        "Wisdom is not a product of schooling but of the lifelong attempt to acquire it./n — Albert Einstein",
-        "Wisdom comes not from age, but from education and learning.― Anton Chekhov",
-        "Learning never exhausts the mind. ― Leonardo da Vinci",
-        "For the best return on your money, pour your purse into your head.― Benjamin Franklin"
+        "Wisdom is not a product of schooling but of the lifelong attempt to acquire it.\n — Albert Einstein",
+        "Wisdom comes not from age, but from education and learning. \n― Anton Chekhov",
+        "Learning never exhausts the mind.\n ― Leonardo da Vinci",
+        "For the best return on your money, pour your purse into your head. \n― Benjamin Franklin"
     ]
     
     var body: some View {
@@ -88,17 +88,53 @@ struct GreetingView: View {
                     }
                     .padding(.top, 50)
                     
-                    Spacer().frame(height: 125)
+                    Spacer().frame(height: 100)
                     
                     
                     TextFader(texts: textArray)
-                        .font(.custom("Kiwi Maru Light", size: 20))
+                        .font(.custom("Kiwi Maru Light", size: 24))
                         .foregroundColor(Color(hex: "#DFDBDB"))
-                        .padding(.leading, 20)
-                        .padding(.leading, 20)
+                        .padding(.horizontal, 20) // Simplified padding syntax
+                   
+                    
+                    
+                    HStack(){
+                        
+                        NavigationLink(destination: LoginView()){
+                            Text("Login")
+                                .font(.custom("Kiwi Maru Medium", size: 18))
+                                .frame(width: 175, height: 52)
+                                .background(Color(hex: "#DFDBDB"))
+                                .foregroundColor(Color(hex: "#C97D60"))
+                                .cornerRadius(20)
+                                .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color(.black))
+                                )
+                                
+                        }
+                        
+                        NavigationLink(destination: LoginView()){
+                            Text("Sign Up")
+                                .font(.custom("Kiwi Maru Medium", size: 18))
+                                .frame(width: 175, height: 52)
+                                .background(Color(hex: "#DFDBDB"))
+                                .foregroundColor(Color(hex: "#C97D60"))
+                                .cornerRadius(20)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color(.black))
+                                )
+                            
+                        }
+
+                    }
+                 
+                    
                     
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                
                 
                 
                 
