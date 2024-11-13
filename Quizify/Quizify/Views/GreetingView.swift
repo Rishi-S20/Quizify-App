@@ -94,9 +94,11 @@ struct GreetingView: View {
                     TextFader(texts: textArray)
                         .font(.custom("Kiwi Maru Light", size: 24))
                         .foregroundColor(Color(hex: "#DFDBDB"))
-                        .padding(.horizontal, 20) // Simplified padding syntax
+                        .padding(.horizontal, 20)
+                        .frame(height: 150)
+                        .multilineTextAlignment(.center)
                    
-                    
+                    Spacer().frame(height: 75)
                     
                     HStack(){
                         
