@@ -124,6 +124,8 @@ struct GreetingView: View {
                                 .presentationCornerRadius(40)
                         }
                         
+                        
+                        
                         NavigationLink(destination: LoginView()){
                             Text("Sign Up")
                                 .font(.custom("Kiwi Maru Medium", size: 18))
