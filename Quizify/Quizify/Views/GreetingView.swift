@@ -98,19 +98,20 @@ struct GreetingView: View {
                         .frame(height: 150)
                         .multilineTextAlignment(.center)
                    
-                    Spacer().frame(height: 75)
+                    Spacer().frame(height: 85)
                     
                     HStack(){
                         
-                        NavigationLink(destination: LoginView()){
+                        NavigationLink(destination: LoginView()
+                            .navigationBarBackButtonHidden(true)){
                             Text("Login")
                                 .font(.custom("Kiwi Maru Medium", size: 18))
                                 .frame(width: 175, height: 52)
                                 .background(Color(hex: "#DFDBDB"))
                                 .foregroundColor(Color(hex: "#C97D60"))
-                                .cornerRadius(20)
+                                .cornerRadius(10)
                                 .overlay(
-                                RoundedRectangle(cornerRadius: 20)
+                                RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color(.black))
                                 )
                                 
@@ -122,9 +123,9 @@ struct GreetingView: View {
                                 .frame(width: 175, height: 52)
                                 .background(Color(hex: "#DFDBDB"))
                                 .foregroundColor(Color(hex: "#C97D60"))
-                                .cornerRadius(20)
+                                .cornerRadius(10)
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
+                                    RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color(.black))
                                 )
                             

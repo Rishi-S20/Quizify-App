@@ -30,6 +30,16 @@ struct LoginView: View {
                     
                     
                     VStack(alignment: .leading){
+                        
+                        
+                        NavigationLink(destination: GreetingView()){
+                            Image(systemName: "x.circle.fill")
+                            
+                        }
+                        .foregroundColor(.gray)
+                        .padding(.top, 113)
+                        
+                        
                         //Title and Logo
                         HStack(spacing: -15) {
                             Text("Quizify")
@@ -41,7 +51,7 @@ struct LoginView: View {
                                 .resizable()
                                 .frame(width: 125, height: 120)
                         }
-                        .padding(.top, 113)
+                        .padding(.top, 75)
                         
                         Spacer().frame(height: 15)
                         
