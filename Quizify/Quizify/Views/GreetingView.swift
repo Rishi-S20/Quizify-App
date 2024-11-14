@@ -64,6 +64,7 @@ struct GreetingView: View {
         "Learning never exhausts the mind.\n ― Leonardo da Vinci",
         "For the best return on your money, pour your purse into your head. \n― Benjamin Franklin"
     ]
+    @State private var showLoginSheet = false
     
     var body: some View {
         NavigationView(){
@@ -102,8 +103,9 @@ struct GreetingView: View {
                     
                     HStack(){
                         
-                        NavigationLink(destination: LoginView()
-                            .navigationBarBackButtonHidden(true)){
+                        Button(action: {
+                            showLoginSheet = true
+                        }) {
                             Text("Login")
                                 .font(.custom("Kiwi Maru Medium", size: 18))
                                 .frame(width: 175, height: 52)
@@ -111,10 +113,15 @@ struct GreetingView: View {
                                 .foregroundColor(Color(hex: "#C97D60"))
                                 .cornerRadius(10)
                                 .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(.black))
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color(.black))
                                 )
-                                
+                        }
+                        .sheet(isPresented: $showLoginSheet) {
+                            LoginView()
+                                .presentationDetents([.height(745)])
+                                .presentationBackgroundInteraction(.enabled)
+                                .presentationCornerRadius(40)
                         }
                         
                         NavigationLink(destination: LoginView()){

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB6602952CE66DCA004BD579 /* KiwiMaru-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBECC25B2CE42A2F001F8ED0 /* KiwiMaru-Light.ttf */; };
+		CB6602962CE66DCA004BD579 /* KiwiMaru-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBECC25C2CE42A30001F8ED0 /* KiwiMaru-Medium.ttf */; };
+		CB6602972CE66DCA004BD579 /* KiwiMaru-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBECC25A2CE42A2E001F8ED0 /* KiwiMaru-Regular.ttf */; };
 		CBECC22A2CE42702001F8ED0 /* QuizifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECC2292CE42702001F8ED0 /* QuizifyApp.swift */; };
 		CBECC22C2CE42702001F8ED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECC22B2CE42702001F8ED0 /* ContentView.swift */; };
 		CBECC22E2CE42706001F8ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBECC22D2CE42706001F8ED0 /* Assets.xcassets */; };
@@ -103,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				CBECC25D2CE42A54001F8ED0 /* Info.plist */,
+				CBECC25B2CE42A2F001F8ED0 /* KiwiMaru-Light.ttf */,
+				CBECC25C2CE42A30001F8ED0 /* KiwiMaru-Medium.ttf */,
+				CBECC25A2CE42A2E001F8ED0 /* KiwiMaru-Regular.ttf */,
 				CBECC2592CE42A11001F8ED0 /* Fonts */,
 				CBECC2532CE4275A001F8ED0 /* Views */,
 				CBECC22B2CE42702001F8ED0 /* ContentView.swift */,
@@ -150,9 +156,6 @@
 		CBECC2592CE42A11001F8ED0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CBECC25B2CE42A2F001F8ED0 /* KiwiMaru-Light.ttf */,
-				CBECC25C2CE42A30001F8ED0 /* KiwiMaru-Medium.ttf */,
-				CBECC25A2CE42A2E001F8ED0 /* KiwiMaru-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -261,6 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6602952CE66DCA004BD579 /* KiwiMaru-Light.ttf in Resources */,
+				CB6602962CE66DCA004BD579 /* KiwiMaru-Medium.ttf in Resources */,
+				CB6602972CE66DCA004BD579 /* KiwiMaru-Regular.ttf in Resources */,
 				CBECC2312CE42706001F8ED0 /* Preview Assets.xcassets in Resources */,
 				CBECC22E2CE42706001F8ED0 /* Assets.xcassets in Resources */,
 			);
