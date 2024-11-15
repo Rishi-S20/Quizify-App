@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CBECC22A2CE42702001F8ED0 /* QuizifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECC2292CE42702001F8ED0 /* QuizifyApp.swift */; };
-		CBECC22C2CE42702001F8ED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECC22B2CE42702001F8ED0 /* ContentView.swift */; };
 		CBECC22E2CE42706001F8ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBECC22D2CE42706001F8ED0 /* Assets.xcassets */; };
 		CBECC2312CE42706001F8ED0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBECC2302CE42706001F8ED0 /* Preview Assets.xcassets */; };
 		CBECC23B2CE42706001F8ED0 /* QuizifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECC23A2CE42706001F8ED0 /* QuizifyTests.swift */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		CBECC2262CE42702001F8ED0 /* Quizify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBECC2292CE42702001F8ED0 /* QuizifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizifyApp.swift; sourceTree = "<group>"; };
-		CBECC22B2CE42702001F8ED0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBECC22D2CE42706001F8ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBECC2302CE42706001F8ED0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CBECC2362CE42706001F8ED0 /* QuizifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +103,6 @@
 				CBECC25D2CE42A54001F8ED0 /* Info.plist */,
 				CBECC2592CE42A11001F8ED0 /* Fonts */,
 				CBECC2532CE4275A001F8ED0 /* Views */,
-				CBECC22B2CE42702001F8ED0 /* ContentView.swift */,
 				CBECC2292CE42702001F8ED0 /* QuizifyApp.swift */,
 				CBECC22D2CE42706001F8ED0 /* Assets.xcassets */,
 				CBECC22F2CE42706001F8ED0 /* Preview Content */,
@@ -287,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBECC22C2CE42702001F8ED0 /* ContentView.swift in Sources */,
 				CBECC2552CE4276E001F8ED0 /* GreetingView.swift in Sources */,
 				CBECC2572CE4277A001F8ED0 /* LoginView.swift in Sources */,
 				CBECC22A2CE42702001F8ED0 /* QuizifyApp.swift in Sources */,
