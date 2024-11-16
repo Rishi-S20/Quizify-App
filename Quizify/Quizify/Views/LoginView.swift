@@ -9,103 +9,100 @@ import SwiftUI
 
 struct LoginView: View {
     @Environment(\.dismiss) var dismiss
-    @State private var username: String = ""
+    @State private var email: String = ""
     @State private var password: String = ""
-    @FocusState private var isUsernameFocused: Bool
+    @FocusState private var isEmailFocused: Bool
     @FocusState private var isPasswordFocused: Bool
     
     var body: some View {
-        ZStack {
-          
-            
-            
-            Image("Background")
-                .resizable()
-                .scaledToFill()
-                .frame(maxWidth: .infinity)
-                .offset(y: 35)
-                .clipped()
-            
-            
-            VStack(alignment: .center) {
-                Button(action: { dismiss() }) {
-                    Image(systemName: "x.circle.fill")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 30))
-                    
-                }
-                .padding(.top, 80)
-               
+        NavigationView{
+            ZStack {
                 
-                // Title and Logo
-                HStack(spacing: -15) {
-                    Text("Quizify")
-                        .font(.custom("Kiwi Maru Regular", size: 55))
-                        .frame(height: 120)
-                        .baselineOffset(10)
+                
+                
+                Image("Background")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: .infinity)
+                    .offset(y: 35)
+                    .clipped()
+                
+                
+                VStack(alignment: .center) {
+                    Button(action: { dismiss() }) {
+                        Image(systemName: "chevron.up")
+                            .foregroundColor(.gray)
+                            .font(.system(size: 30))
+                        
+                    }
+                    .padding(.top, 80)
                     
+                    
+                    // Title and Logo
+                    
+                    Spacer().frame(height: 40)
+                        
                     Image(.quzifyLogo)
                         .resizable()
                         .frame(width: 125, height: 120)
-                }
-                .padding(.top, 45)
-                
-                Spacer().frame(height: 20)
-                
-                Text("Login")
-                    .font(.custom("Kiwi Maru Regular", size: 30))
-                
-                
-                
-                VStack(spacing: 30) {
-                    TextField("Username", text: $username)
-                        .font(.custom("Kiwi Maru Regular", size: 18))
-                        .frame(width: 297, height: 52)
-                        .padding(.horizontal)
-                        .background(Color(hex: "#CECECE").opacity(0.2))
-                        .cornerRadius(20)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color(hex: "#C97D60"),
-                                        lineWidth: isUsernameFocused ? 7 : 3)
-                                .animation(.easeInOut(duration: 0.2), value: isUsernameFocused)
-                        )
-                        .focused($isUsernameFocused)
                     
-                    TextField("Password", text: $password)
-                        .font(.custom("Kiwi Maru Regular", size: 18))
-                        .frame(width: 297, height: 52)
-                        .padding(.horizontal)
-                        .background(Color(hex: "#CECECE").opacity(0.2))
-                        .cornerRadius(20)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color(hex: "#C97D60"),
-                                        lineWidth: isPasswordFocused ? 7 : 3)
-                                .animation(.easeInOut(duration: 0.2), value: isPasswordFocused)
-                        )
-                        .focused($isPasswordFocused)
-                }
-                
-                Button(action: {
-                    // Handle login
-                }) {
+                    
+                    Spacer().frame(height: 20)
+                    
                     Text("Login")
-                        .font(.custom("Kiwi Maru Regular", size: 18))
-                        .frame(width: 233, height: 43)
-                        .background(Color(hex: "#C97D60"))
-                        .cornerRadius(20)
-                        .foregroundColor(.white)
+                        .font(.custom("Kiwi Maru Regular", size: 30))
+                    
+                    
+                    
+                    VStack(spacing: 30) {
+                        TextField("Email", text: $email)
+                            .font(.custom("Kiwi Maru Regular", size: 18))
+                            .frame(width: 297, height: 52)
+                            .padding(.horizontal)
+                            .background(Color(hex: "#CECECE").opacity(0.2))
+                            .cornerRadius(20)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color(hex: "#C97D60"),
+                                            lineWidth: isEmailFocused ? 7 : 3)
+                                    .animation(.easeInOut(duration: 0.2), value: isEmailFocused)
+                            )
+                            .focused($isEmailFocused)
+                        
+                        TextField("Password", text: $password)
+                            .font(.custom("Kiwi Maru Regular", size: 18))
+                            .frame(width: 297, height: 52)
+                            .padding(.horizontal)
+                            .background(Color(hex: "#CECECE").opacity(0.2))
+                            .cornerRadius(20)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color(hex: "#C97D60"),
+                                            lineWidth: isPasswordFocused ? 7 : 3)
+                                    .animation(.easeInOut(duration: 0.2), value: isPasswordFocused)
+                            )
+                            .focused($isPasswordFocused)
+                    }
+                    
+                    NavigationLink(destination: HomeView()){
+                        Text("Login")
+                            .font(.custom("Kiwi Maru Regular", size: 18))
+                            .frame(width: 233, height: 43)
+                            .background(Color(hex: "#C97D60"))
+                            .cornerRadius(20)
+                            .foregroundColor(.white)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 27)
+                    
+                    Spacer()
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.top, 27)
-                
-                Spacer()
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
+            .ignoresSafeArea(.keyboard)
+            .frame(maxHeight: 650)
         }
-        .ignoresSafeArea(.keyboard)
-        .frame(maxHeight: 650)
+        
     }
 }
 

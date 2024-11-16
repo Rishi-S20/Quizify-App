@@ -11,6 +11,7 @@
 		CB6602962CE66DCA004BD579 /* KiwiMaru-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBECC25C2CE42A30001F8ED0 /* KiwiMaru-Medium.ttf */; };
 		CB6602972CE66DCA004BD579 /* KiwiMaru-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBECC25A2CE42A2E001F8ED0 /* KiwiMaru-Regular.ttf */; };
 		CB6602992CE67605004BD579 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6602982CE67605004BD579 /* SignupView.swift */; };
+		CB66029B2CE6BF65004BD579 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB66029A2CE6BF65004BD579 /* HomeView.swift */; };
 		CBECC22A2CE42702001F8ED0 /* QuizifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECC2292CE42702001F8ED0 /* QuizifyApp.swift */; };
 		CBECC22C2CE42702001F8ED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECC22B2CE42702001F8ED0 /* ContentView.swift */; };
 		CBECC22E2CE42706001F8ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBECC22D2CE42706001F8ED0 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		CB6602982CE67605004BD579 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		CB66029A2CE6BF65004BD579 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CBECC2262CE42702001F8ED0 /* Quizify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBECC2292CE42702001F8ED0 /* QuizifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizifyApp.swift; sourceTree = "<group>"; };
 		CBECC22B2CE42702001F8ED0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				CBECC2542CE4276E001F8ED0 /* GreetingView.swift */,
 				CBECC2562CE4277A001F8ED0 /* LoginView.swift */,
+				CB66029A2CE6BF65004BD579 /* HomeView.swift */,
 				CB6602982CE67605004BD579 /* SignupView.swift */,
 			);
 			path = Views;
@@ -299,6 +302,7 @@
 				CBECC22C2CE42702001F8ED0 /* ContentView.swift in Sources */,
 				CBECC2552CE4276E001F8ED0 /* GreetingView.swift in Sources */,
 				CBECC2572CE4277A001F8ED0 /* LoginView.swift in Sources */,
+				CB66029B2CE6BF65004BD579 /* HomeView.swift in Sources */,
 				CBECC22A2CE42702001F8ED0 /* QuizifyApp.swift in Sources */,
 				CB6602992CE67605004BD579 /* SignupView.swift in Sources */,
 			);

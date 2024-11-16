@@ -65,7 +65,8 @@ struct GreetingView: View {
         "For the best return on your money, pour your purse into your head. \n― Benjamin Franklin"
     ]
     @State private var showLoginSheet = false
-    
+    @State private var showSignupSheet = false
+
     var body: some View {
         NavigationView(){
             ZStack{
@@ -111,9 +112,9 @@ struct GreetingView: View {
                                 .frame(width: 175, height: 52)
                                 .background(Color(hex: "#DFDBDB"))
                                 .foregroundColor(Color(hex: "#C97D60"))
-                                .cornerRadius(10)
+                                .cornerRadius(20)
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
+                                    RoundedRectangle(cornerRadius: 20)
                                         .stroke(Color(.black))
                                 )
                         }
@@ -124,21 +125,29 @@ struct GreetingView: View {
                                 .presentationCornerRadius(40)
                         }
                         
+                        Button(action: {
+                            showSignupSheet = true
+                        }) {
                         
-                        
-                        NavigationLink(destination: LoginView()){
                             Text("Sign Up")
                                 .font(.custom("Kiwi Maru Medium", size: 18))
                                 .frame(width: 175, height: 52)
                                 .background(Color(hex: "#DFDBDB"))
                                 .foregroundColor(Color(hex: "#C97D60"))
-                                .cornerRadius(10)
+                                .cornerRadius(20)
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
+                                    RoundedRectangle(cornerRadius: 20)
                                         .stroke(Color(.black))
                                 )
-                            
                         }
+                        .sheet(isPresented: $showSignupSheet) {
+                            SignupView()
+                                .presentationDetents([.height(745)])
+                                .presentationBackgroundInteraction(.enabled)
+                                .presentationCornerRadius(40)
+                        }
+
+                        
 
                     }
                  
