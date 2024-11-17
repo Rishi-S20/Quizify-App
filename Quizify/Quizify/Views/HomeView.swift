@@ -46,10 +46,11 @@ struct HomeView: View {
                 .padding(.horizontal)
                 .padding(.top, 40)
                 
-                VStack(){
-                    Text("Recents")
+                VStack(alignment: .leading){
+                    Text("Sets")
                         .font(.custom("Kiwi Maru Light", size: 25))
                         .foregroundColor(Color(.gray))
+                        .padding(.leading, 30)
                     
                     ScrollView(.horizontal) {
                         HStack(spacing: 20) {
@@ -57,7 +58,7 @@ struct HomeView: View {
                                 Text("Item \($0)")
                                     .foregroundStyle(.white)
                                     .font(.largeTitle)
-                                    .frame(width: 167, height: 118)
+                                    .frame(width: 190, height: 145)
                                     .background(Color(hex: "#C97D60"))
                                     .cornerRadius(15)
                                     
@@ -68,7 +69,20 @@ struct HomeView: View {
                     
                     
                 }
-                .padding(.leading, 30)
+
+                
+                Spacer().frame(height: 30)
+                
+                VStack(alignment: .leading){
+                    
+                    Text("Achievements")
+                        .font(.custom("Kiwi Maru Light", size: 25))
+                        .foregroundColor(Color(.gray))
+                    
+                    
+
+                    
+                }
                
             }
         }
