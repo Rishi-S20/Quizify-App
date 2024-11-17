@@ -16,8 +16,13 @@ struct SignupView: View {
     @FocusState private var isNameFocused: Bool
     @FocusState private var isEmailFocused: Bool
     @FocusState private var isPasswordFocused: Bool
+    @State private var shouldShowHome = false
     
 
+    private var isFormValid: Bool {
+        !name.isEmpty && !email.isEmpty && !password.isEmpty
+    }
+    
     
     var body: some View {
         NavigationView{
@@ -105,7 +110,21 @@ struct SignupView: View {
                         
                     }
                 
-                    
+                    Button(action: {
+                        if isFormValid {
+                            shouldShowHome = true
+                        }
+                    }) {
+                        Text("Sign Up")
+                            .font(.custom("Kiwi Maru Regular", size: 18))
+                            .frame(width: 233, height: 43)
+                            .background(isFormValid ? Color(hex: "#C97D60") : Color.gray)
+                            .cornerRadius(20)
+                            .foregroundColor(.white)
+                    }
+                    .disabled(!isFormValid)
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 27)
                     
         
             
@@ -114,7 +133,11 @@ struct SignupView: View {
                 }
                 .padding(.horizontal)
             }
+        
             .ignoresSafeArea(.keyboard)
+            .fullScreenCover(isPresented: $shouldShowHome) {
+                HomeView()
+            }
             .frame(maxHeight: 650)
         }
         
