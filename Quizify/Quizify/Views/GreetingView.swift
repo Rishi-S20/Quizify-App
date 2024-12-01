@@ -161,6 +161,7 @@ struct GreetingView: View {
                 
                 
             }
+            .preferredColorScheme(.light)
             
         }
         
