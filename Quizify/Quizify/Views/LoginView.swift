@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+
+
+struct CircularImageModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .clipShape(Circle())
+            .contentShape(Circle())
+    }
+}
+
+
 struct LoginView: View {
     @Environment(\.dismiss) var dismiss
     @State private var email: String = ""
@@ -96,7 +107,8 @@ struct LoginView: View {
                     .padding(.top, 27)
                     
                     
-                    Spacer().frame(height: 20)
+                    Spacer().frame(height: 25
+                    )
                     
                     HStack{
                       
@@ -115,6 +127,21 @@ struct LoginView: View {
                     }
                     
                     
+//                    Circle()
+//                        .frame(width: 50, height: 50)
+//                        .foregroundColor(Color(hex: "#D9D9D9"))
+                    
+                    
+                    Image(.googleSymbol)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 50, height: 50)
+                        .background(Color(hex: "#D9D9D9"))
+                        .modifier(CircularImageModifier())
+                      
+                        
+                    
+                     
                     
                     Spacer()
                 }
