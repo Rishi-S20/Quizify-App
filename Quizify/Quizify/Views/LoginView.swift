@@ -95,6 +95,27 @@ struct LoginView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.top, 27)
                     
+                    
+                    Spacer().frame(height: 20)
+                    
+                    HStack{
+                      
+                        Rectangle()
+                            .frame(width: 135, height: 1)
+                            .foregroundColor(.black)
+                           
+                        
+                        Text("or")
+                            .font(.custom("Kiwi Maru Regular", size: 20))
+                        
+                        Rectangle()
+                            .frame(width: 135, height: 1)
+                            .foregroundColor(.black)
+                          
+                    }
+                    
+                    
+                    
                     Spacer()
                 }
                 .padding(.horizontal)

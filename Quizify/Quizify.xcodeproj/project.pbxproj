@@ -115,7 +115,6 @@
 				CBECC25B2CE42A2F001F8ED0 /* KiwiMaru-Light.ttf */,
 				CBECC25C2CE42A30001F8ED0 /* KiwiMaru-Medium.ttf */,
 				CBECC25A2CE42A2E001F8ED0 /* KiwiMaru-Regular.ttf */,
-				CBECC2592CE42A11001F8ED0 /* Fonts */,
 				CBECC2532CE4275A001F8ED0 /* Views */,
 				CB04898C2CEA72EA0037BA6F /* Cheese.swift */,
 				CBECC2292CE42702001F8ED0 /* QuizifyApp.swift */,
@@ -160,13 +159,6 @@
 				CB6602982CE67605004BD579 /* SignupView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		CBECC2592CE42A11001F8ED0 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
